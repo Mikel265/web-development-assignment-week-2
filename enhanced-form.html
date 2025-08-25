@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced HTML5 Content & Forms</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+    }
+    header, section, footer {
+      margin-bottom: 2rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+    table, th, td {
+      border: 1px solid #555;
+      padding: 8px;
+      text-align: left;
+    }
+    fieldset {
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+    legend {
+      font-weight: bold;
+    }
+    label {
+      display: block;
+      margin: 0.5rem 0 0.2rem;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    input[type="submit"] {
+      width: auto;
+      background: #0078D7;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background: #005fa3;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Enhanced HTML5 Content & Forms</h1>
+    <p>This page demonstrates the use of lists, tables, media, and a structured HTML5 form with validation.</p>
+  </header>
+
+  <!-- Lists Section -->
+  <section>
+    <h2> My Various Favourite Technologies</h2>
+    <ul>
+      <li>Programming Languages
+        <ol>
+          <li>Python</li>
+          <li>Java</li>
+          <li>JavaScript</li>
+        </ol>
+      </li>
+      <li>Web Technologies
+        <ol>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>React</li>
+        </ol>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Table Section -->
+  <section>
+    <h2>Course Timetable</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Subject</th>
+          <th>Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monday</td>
+          <td>HTML & CSS</td>
+          <td>10:00 - 11:30</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td>JavaScript Basics</td>
+          <td>2:00 - 3:30</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>Python Programming</td>
+          <td>11:00 - 12:30</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Media Section -->
+  <section>
+    <h2>Learning Resources</h2>
+    <figure>
+      <img src="https://via.placeholder.com/400x200" alt="Learning Image" width="400">
+      <figcaption>Sample placeholder image for learning.</figcaption>
+    </figure>
+    <audio controls>
+      <source src="file:///C:/Users/Michael%20ndung'u/Music/EMMANUEL%20-%20Vestine%20&%20Dorcas%20(Official%20Video)%20-%20MIE%20MUSIC.mp3" type="audio/mpeg">
+      Your browser does not support audio playback.
+    </audio>
+    <br><br>
+    <video width="400" controls>
+      <source src="https://videos.pexels.com/video-files/3129576/3129576-uhd_2560_1440_30fps.mp4" type="video/mp4">
+      Your browser does not support video playback.
+    </video>
+  </section>
+
+  <!-- Form Section -->
+  <section>
+    <h2>Registration Form</h2>
+    <form action="#" method="post" autocomplete="on">
+      
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="mikis " required minlength="3">
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="mikis@mail.com" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="+254712345678" pattern="^\+?[0-9]{10,13}$" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Account Details</legend>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required minlength="5" maxlength="15">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="6">
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+        <label for="course">Select Course:</label>
+        <select id="course" name="course" required>
+          <option value="">--Select--</option>
+          <option value="html">HTML & CSS</option>
+          <option value="js">JavaScript</option>
+          <option value="python">Python</option>
+        </select>
+
+        <label>Subscribe to Newsletter:</label>
+        <input type="checkbox" id="newsletter" name="newsletter" checked readonly> Yes (default)
+        
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required> Male
+        <input type="radio" id="female" name="gender" value="female" required> Female
+      </fieldset>
+
+      <fieldset>
+        <legend>Feedback</legend>
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4" placeholder="Your feedback..."></textarea>
+      </fieldset>
+
+      <input type="submit" value="Submit Form">
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; MICHAEL NDUNGU | All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
